@@ -11,13 +11,9 @@ Original file is located at
 
 import shutil
 import os
-# Specify the path of the folder you want to clear
 folder_path = '/content'
 
-# Use shutil.rmtree() to remove the entire folder and its content
 shutil.rmtree(folder_path)
-
-# Create an empty folder at the same path
 os.makedirs(folder_path)
 
 ! git clone https://github.com/ParisaO/RL_communication_via_MDPs.git
@@ -55,8 +51,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 loss_train = np.loadtxt('/content/RL_communication_via_MDPs/CSV/loss_train.txt')
-# eps = np.loadtxt('/content/RL_communication_via_MDPs/CSV/episodes.txt')
-# steps = np.loadtxt('/content/RL_communication_via_MDPs/CSV/num_steps.txt')
 test_reward = np.loadtxt('/content/RL_communication_via_MDPs/CSV/test_reward.txt')
 
 #test reward
